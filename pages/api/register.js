@@ -1,6 +1,5 @@
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
+// Importa il prisma dal file lib/prisma.js (singleton)
+import prisma from '../../lib/prisma';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
